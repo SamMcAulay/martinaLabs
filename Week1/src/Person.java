@@ -5,9 +5,6 @@ public class Person {
     private String address;
 
     public Person() {
-        this.name = null;
-        this.phoneNumber = 0;
-        this.address = null;
     }
 
     public Person(String name) {
@@ -30,9 +27,11 @@ public class Person {
         this.address = address;
     }
 
-    Person p1 = new Person();
-    Person p2 = new Person("John");
-    Person p3 = new Person("Mary", "Cork");
-    Person p4 = new Person(123,"Claire");
-    Person p5 = new Person("Michael", 456, "Dublin");
+    public void printDetails(){
+
+        System.out.println("Name: " + name);
+        System.out.println("Phone Number: " + phoneNumber);
+        System.out.println("Address: " + address);
+        System.out.println("**************************************");
+    }
 }
